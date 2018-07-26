@@ -11,3 +11,7 @@
 - npm run update - moshu-cms로부터 업데이트된 코드를 pull해옵니다.
 - build-css - sass -> css 변환
 - watch-css - sass -> css 변환 with watch option
+
+### 컴퍼넌트
+현재 사용가능한 컴퍼넌트 목록은 npm start후
+http://localhost:3000/test-doc 에서 확인 가능합니다.
