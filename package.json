@@ -23,7 +23,7 @@
   },
   "scripts": {
     "initialize": "sh ./scripts/initialize.sh",
-    "update": "git pull upstream master",
+    "update": "git pull upstream master --allow-unrelated-histories",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
