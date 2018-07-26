@@ -1,7 +1,7 @@
 # 모슈 CMS
 
 ### 시작하기
-1. git clone https://github.com/khsily/moshu-cms.git
+1. git clone https://github.com/khsily/moshu-cms.git [folder 이름]
 2. npm run initialize
 3. npm start
 
