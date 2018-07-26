@@ -1,0 +1,40 @@
+@import '../../../styles/color.scss';
+
+.cms-table {
+  width: 100%;
+
+  thead {    
+    tr {
+      th {
+        text-align: left;
+        font-size: 15px;
+        font-weight: normal;
+        color: #707070;
+        padding: 21px;
+        border-bottom: 1px solid #BEBEBE;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 25px 21px;
+        font-size: 15px;
+        color: #707070;
+      }
+    }
+  }
+
+  th, td {
+    &.center { text-align: center }
+    &.black { color: #000 }
+    &.green { color: $color-green }
+    &.red { color: $color-red }
+    &.primary { color: $color-primary }
+
+    a {
+      color: inherit;
+    }
+  }
+}

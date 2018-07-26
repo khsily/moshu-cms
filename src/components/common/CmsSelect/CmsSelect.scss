@@ -1,0 +1,35 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/dimension.scss';
+
+.cms-select {
+  margin-right: 11px;
+
+  .cms-select__control {
+    font-weight: bold;
+    
+    &--is-focused {
+      border-color: $color-primary;
+      box-shadow: 0 0 0 1px $color-primary;
+    }
+  }
+
+  .cms-select__menu {
+    .cms-select__menu-list {
+      .cms-select__option {
+        &--is-focused {
+          background-color: rgba($color-primary, 0.2);
+        }
+        &--is-selected {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &.big .cms-select__control { width: $width-big; height: $height-big; font-size: 18px; }
+  &.big .cms-select__menu { width: $width-big; }
+  &.mid .cms-select__control { width: $width-mid; height: $height-mid; font-size: 15px; }
+  &.mid .cms-select__menu { width: $width-mid; }
+  &.small .cms-select__control { width: $width-small; height: $height-small; font-size: 12px; }
+  &.small .cms-select__menu { width: $width-small; }
+}

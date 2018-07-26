@@ -1,0 +1,13 @@
+.radio-group .radio-group__radio {
+  background-color: #fff;
+  transition: background-color 0.2s;
+  color: #A2A2A2;
+  margin-right: 19px; }
+  .radio-group .radio-group__radio:hover {
+    background-color: #f2f2f2; }
+  .radio-group .radio-group__radio.active {
+    background-color: #0D9BA8;
+    transition: background-color 0.2s;
+    color: #fff; }
+    .radio-group .radio-group__radio.active:hover {
+      background-color: #0b8590; }

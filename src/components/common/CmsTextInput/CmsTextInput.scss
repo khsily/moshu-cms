@@ -1,0 +1,38 @@
+.cms-text-input {
+  padding: 7px 0;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  align-items: center;
+  background-color: #fff;
+
+  .cms-text-input__input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    outline: none;
+  }
+
+  &.file {
+    cursor: pointer;
+
+    .cms-text-input__input {
+      display: none;
+    }
+
+    .file-name {
+      flex: 1;
+      padding: 0 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &.with-btn { padding-right: 11px }
+  &.focused { border-color:#666 !important; }
+}

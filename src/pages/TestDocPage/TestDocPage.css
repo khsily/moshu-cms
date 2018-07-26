@@ -1,0 +1,23 @@
+@charset "UTF-8";
+#test-doc-page {
+  padding-top: 10px; }
+  #test-doc-page article {
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    padding: 10px; }
+    #test-doc-page article.eee {
+      background-color: #eee; }
+  #test-doc-page .desc {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    color: #999;
+    word-break: break-all;
+    white-space: normal;
+    line-height: 22px; }
+    #test-doc-page .desc::before {
+      display: block;
+      font-weight: bold;
+      content: '설명';
+      margin-bottom: 10px;
+      color: #777; }

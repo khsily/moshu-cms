@@ -1,0 +1,29 @@
+.cms-select {
+  margin-right: 11px; }
+  .cms-select .cms-select__control {
+    font-weight: bold; }
+    .cms-select .cms-select__control--is-focused {
+      border-color: #0D9BA8;
+      box-shadow: 0 0 0 1px #0D9BA8; }
+  .cms-select .cms-select__menu .cms-select__menu-list .cms-select__option--is-focused {
+    background-color: rgba(13, 155, 168, 0.2); }
+  .cms-select .cms-select__menu .cms-select__menu-list .cms-select__option--is-selected {
+    background-color: #0D9BA8; }
+  .cms-select.big .cms-select__control {
+    width: 313px;
+    height: 56px;
+    font-size: 18px; }
+  .cms-select.big .cms-select__menu {
+    width: 313px; }
+  .cms-select.mid .cms-select__control {
+    width: 155px;
+    height: 49px;
+    font-size: 15px; }
+  .cms-select.mid .cms-select__menu {
+    width: 155px; }
+  .cms-select.small .cms-select__control {
+    width: 110px;
+    height: 36px;
+    font-size: 12px; }
+  .cms-select.small .cms-select__menu {
+    width: 110px; }

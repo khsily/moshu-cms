@@ -1,0 +1,26 @@
+@import '../../../styles/mixin.scss';
+
+.category-list-group {
+  list-style: none;
+  padding: 0;
+
+  .category-list-group__title {
+    height: 67px;
+    text-align: center;
+    font-size: 18px;
+    color: #707070;
+  }
+
+  .category-list {
+    padding: 18px;
+    font-size: 18px;
+    @include hoverColor(#707070);
+    border-bottom: 1px solid #EEEEEE;
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}

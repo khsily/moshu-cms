@@ -1,0 +1,20 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/dimension.scss';
+@import '../../../styles/mixin.scss';
+
+.cms-button {
+  @include hoverColor($color-primary, 'background');
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  line-height: initial;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 2px 10px;
+  cursor: pointer;
+  outline: none;
+
+  &.big { min-width: $width-big; height: $height-big; font-size: 20px; }
+  &.mid { min-width: $width-mid; height: $height-mid; font-size: 20px; }
+  &.small { min-width: $width-small; height: $height-small; font-size: 12px; }
+}

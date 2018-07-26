@@ -1,0 +1,15 @@
+@import '../../../styles/color.scss';
+@import '../../../styles/mixin.scss';
+
+.radio-group {
+  .radio-group__radio {
+    @include hoverColor(#fff, 'background');
+    color: #A2A2A2;
+    margin-right: 19px;
+
+    &.active { 
+      @include hoverColor($color-primary, 'background');
+      color: #fff;
+    }
+  }
+}

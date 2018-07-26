@@ -1,0 +1,7 @@
+.cms-box {
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  padding: 25px;
+  box-sizing: border-box; }
+  .cms-box.content {
+    padding: 30px; }

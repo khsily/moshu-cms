@@ -1,0 +1,24 @@
+header .header-top {
+  background-color: #0D9BA8;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box; }
+
+header .header-app-name {
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0; }
+  header .header-app-name a {
+    color: #fff; }
+
+header .header-logout-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.2s; }
+  header .header-logout-btn:hover {
+    color: #dedede; }

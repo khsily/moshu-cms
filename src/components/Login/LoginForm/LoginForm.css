@@ -1,0 +1,19 @@
+#login-form {
+  width: 650px; }
+  #login-form .login-form__wrapper .login-form__input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px; }
+    #login-form .login-form__wrapper .login-form__input-wrapper .login-form__label {
+      font-size: 20px;
+      font-weight: bold;
+      width: 143px; }
+    #login-form .login-form__wrapper .login-form__input-wrapper .login-form__input {
+      flex: 1;
+      height: 55px; }
+    #login-form .login-form__wrapper .login-form__input-wrapper:last-of-type {
+      margin-bottom: 30px; }
+  #login-form .login-form__wrapper .login-form__btn {
+    width: 100%;
+    height: 90px;
+    font-size: 35px; }

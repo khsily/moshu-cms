@@ -1,0 +1,15 @@
+@import '../../../styles/mixin.scss';
+
+.bread-crumb-menu {
+  .crumb-menu {
+    @include hoverColor(#A2A2A2);
+    font-size: 20px;
+    &.active { color: #000; }
+    line-height: initial;
+
+    .crumb-menu-arrow {
+      display: inline-block;
+      margin: 0 8px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.category-list-group {
+  list-style: none;
+  padding: 0; }
+  .category-list-group .category-list-group__title {
+    height: 67px;
+    text-align: center;
+    font-size: 18px;
+    color: #707070; }
+  .category-list-group .category-list {
+    padding: 18px;
+    font-size: 18px;
+    color: #707070;
+    transition: color 0.2s;
+    border-bottom: 1px solid #EEEEEE;
+    cursor: pointer; }
+    .category-list-group .category-list:hover {
+      color: #4f4f4f; }
+    .category-list-group .category-list.active {
+      font-weight: bold;
+      color: #000; }

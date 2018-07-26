@@ -1,0 +1,12 @@
+.bread-crumb-menu .crumb-menu {
+  color: #A2A2A2;
+  transition: color 0.2s;
+  font-size: 20px;
+  line-height: initial; }
+  .bread-crumb-menu .crumb-menu:hover {
+    color: #818181; }
+  .bread-crumb-menu .crumb-menu.active {
+    color: #000; }
+  .bread-crumb-menu .crumb-menu .crumb-menu-arrow {
+    display: inline-block;
+    margin: 0 8px; }

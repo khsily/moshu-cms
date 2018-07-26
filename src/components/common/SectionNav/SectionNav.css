@@ -1,0 +1,15 @@
+.section-nav {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-left: 26px;
+  padding-right: 15px;
+  height: 79px; }
+  .section-nav .section-nav-left {
+    flex: 1; }
+  .section-nav .section-nav-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal; }

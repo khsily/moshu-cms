@@ -1,0 +1,11 @@
+@mixin hoverColor($color, $target: '') {
+  @if $target == 'background' {
+    background-color: $color;
+    transition: background-color 0.2s;
+    &:hover { background-color: darken($color, 5%) }
+  } @else {
+    color: $color;
+    transition: color 0.2s;
+    &:hover { color: darken($color, 13%) }
+  }
+}

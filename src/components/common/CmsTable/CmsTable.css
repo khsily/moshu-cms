@@ -1,0 +1,25 @@
+.cms-table {
+  width: 100%; }
+  .cms-table thead tr th {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: #707070;
+    padding: 21px;
+    border-bottom: 1px solid #BEBEBE; }
+  .cms-table tbody tr td {
+    padding: 25px 21px;
+    font-size: 15px;
+    color: #707070; }
+  .cms-table th.center, .cms-table td.center {
+    text-align: center; }
+  .cms-table th.black, .cms-table td.black {
+    color: #000; }
+  .cms-table th.green, .cms-table td.green {
+    color: #78CA90; }
+  .cms-table th.red, .cms-table td.red {
+    color: #A80D42; }
+  .cms-table th.primary, .cms-table td.primary {
+    color: #0D9BA8; }
+  .cms-table th a, .cms-table td a {
+    color: inherit; }

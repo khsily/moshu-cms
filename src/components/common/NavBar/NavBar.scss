@@ -1,0 +1,29 @@
+@import '../../../styles/mixin.scss';
+
+.navbar {
+  background-color: #4B4B4B;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 15px 0;
+  margin-bottom: 22px;
+
+  .navbar-list {
+    padding: 2px 26px;
+    border-right: 1px solid #E9E9E9;
+    
+    a {
+      @include hoverColor(#BEBEBE);
+      font-size: 13px;
+
+      &.active {
+        @include hoverColor(#fff);
+      }
+    }
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
