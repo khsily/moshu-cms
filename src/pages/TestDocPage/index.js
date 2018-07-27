@@ -14,6 +14,7 @@ import {
   CmsPager,
   CmsFileInput,
   CmsRow,
+  CmsTextarea,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -134,7 +135,7 @@ class TestDocPage extends Component {
             btnValue='확인' />
         </article>
 
-        {/* CmsTextInput */}
+        {/* CmsFileInput */}
         <article>
           <h1>CmsFileInput 컴퍼넌트</h1>
           <pre className='desc'>
@@ -142,6 +143,16 @@ class TestDocPage extends Component {
           </pre>
           <CmsFileInput
             wrapperStyle={{ border: '1px solid #BEBEBE', width: 500, marginBottom: 10 }} />
+        </article>
+
+        {/* CmsTextarea */}
+        <article>
+          <h1>CmsTextarea 컴퍼넌트</h1>
+          <pre className='desc'>
+            CmsTextInput textarea 버젼
+          </pre>
+          <CmsTextarea
+            style={{ border: '1px solid #BEBEBE', width: 500, marginBottom: 10 }} />
         </article>
 
         {/* RadioGroup */}

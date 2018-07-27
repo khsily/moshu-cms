@@ -8,6 +8,7 @@ import CmsTable, { TCol } from './common/CmsTable';
 import BreadCrumbMenu from './common/BreadCrumbMenu';
 import CmsTextInput from './common/CmsTextInput';
 import CmsFileInput from './common/CmsFileInput';
+import CmsTextarea from './common/CmsTextarea';
 import RadioGroup from './common/RadioGroup';
 import CmsSelect from './common/CmsSelect';
 import TuiEditor from './common/TuiEditor';
@@ -27,6 +28,7 @@ export {
   TCol,
   BreadCrumbMenu,
   CmsTextInput,
+  CmsTextarea,
   CmsFileInput,
   RadioGroup,
   CmsSelect,
