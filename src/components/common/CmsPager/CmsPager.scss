@@ -2,6 +2,11 @@
 @import '../../../styles/color.scss';
 
 .cms-pager {
+  border-top: 1px solid #BEBEBE;
+  margin-top: 20px;
+  padding: 30px 10px;
+  box-sizing: border-box;
+
   button {
     border: none;
     background-color: transparent;
