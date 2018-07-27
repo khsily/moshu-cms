@@ -9,10 +9,7 @@ class CmsTextInput extends Component {
 
     this.state = {
       focused: false,
-      fileName: '파일 선택',
     }
-
-    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   render() {
@@ -25,11 +22,11 @@ class CmsTextInput extends Component {
       focusControl,
       btnType,
       withBtn,
-      type,
       onChange,
+      onBtnClick,
       ...rest,
     } = this.props;
-    const { focused, fileName } = this.state;
+    const { focused } = this.state;
 
     return (
       <label
@@ -37,20 +34,17 @@ class CmsTextInput extends Component {
         className={`cms-text-input 
           ${focused && 'focused'} 
           ${wrapperClassName} 
-          ${withBtn ? 'with-btn' : ''}
-          ${type === 'file' ? 'file' : ''}`}>
-        {type === 'file' && <span className='file-name'>{fileName}</span>}
+          ${withBtn ? 'with-btn' : ''}`}>
         <input
           className={`cms-text-input__input ${className}`}
           onFocus={() => this.handleFocus(true)}
           onBlur={() => this.handleFocus(false)}
-          onChange={this.handleInputChange}
-          type={type}
           {...rest} />
         {withBtn &&
           <CmsButton
             className={`cms-text-input__btn ${btbClassName}`}
-            btnType={btnType}>
+            btnType={btnType}
+            onClick={onBtnClick}>
             {btnValue}
           </CmsButton>
         }
@@ -60,18 +54,6 @@ class CmsTextInput extends Component {
 
   handleFocus(focused) {
     if (this.props.focusControl) this.setState({ focused });
-  }
-
-  handleInputChange(e) {
-    const { type, onChange } = this.props;
-
-    if (type !== 'file') {
-      if (onChange) onChange(e);
-      return
-    }
-
-    this.setState({ fileName: e.target.files[0].name });
-    if (onChange) onChange(e);
   }
 }
 

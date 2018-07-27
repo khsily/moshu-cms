@@ -12,6 +12,7 @@ import {
   TuiEditor,
   CategoryListGroup,
   CmsPager,
+  CmsFileInput,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -130,12 +131,16 @@ class TestDocPage extends Component {
             withBtn
             btnType='small'
             btnValue='확인' />
-          <CmsTextInput
-            wrapperStyle={{ border: '1px solid #BEBEBE', width: 500 }}
-            withBtn
-            btnType='small'
-            type='file'
-            btnValue='업로드' />
+        </article>
+
+        {/* CmsTextInput */}
+        <article>
+          <h1>CmsFileInput 컴퍼넌트</h1>
+          <pre className='desc'>
+            input type='file' 와 CmsBtm을 하나로 합쳐놓은 컴퍼넌트입니다.
+          </pre>
+          <CmsFileInput 
+            wrapperStyle={{ border: '1px solid #BEBEBE', width: 500, marginBottom: 10 }} />
         </article>
 
         {/* RadioGroup */}
