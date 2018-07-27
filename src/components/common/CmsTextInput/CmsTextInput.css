@@ -1,5 +1,5 @@
 .cms-text-input {
-  padding: 7px 0;
+  padding: 5.5px 0;
   box-sizing: border-box;
   display: flex;
   position: relative;
@@ -25,6 +25,6 @@
       overflow: hidden;
       text-overflow: ellipsis; }
   .cms-text-input.with-btn {
-    padding-right: 11px; }
+    padding-right: 8px; }
   .cms-text-input.focused {
     border-color: #666 !important; }
