@@ -14,7 +14,8 @@
     border: none;
     background-color: transparent;
     padding: 0 10px;
-    outline: none; }
+    outline: none;
+    font-size: 20px; }
   .cms-text-input.file {
     cursor: pointer; }
     .cms-text-input.file .cms-text-input__input {
