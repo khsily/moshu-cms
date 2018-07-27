@@ -10,7 +10,7 @@ class HomePage extends Component {
         <SectionNav left='회원관리' />
         <div style={{ width: '100%', height: 350, border: '1px solid #ccc', marginBottom: 20 }} />
       </section>
-    )
+    );
   }
 };
 
