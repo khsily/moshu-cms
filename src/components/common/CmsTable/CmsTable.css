@@ -21,5 +21,7 @@
     color: #A80D42; }
   .cms-table th.primary, .cms-table td.primary {
     color: #0D9BA8; }
+  .cms-table th.bold, .cms-table td.bold {
+    font-weight: bold; }
   .cms-table th a, .cms-table td a {
     color: inherit; }

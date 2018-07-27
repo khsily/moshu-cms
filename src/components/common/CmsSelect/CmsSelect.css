@@ -1,7 +1,8 @@
 .cms-select {
   margin-right: 11px; }
   .cms-select .cms-select__control {
-    font-weight: bold; }
+    font-weight: bold;
+    background-color: #fff; }
     .cms-select .cms-select__control--is-focused {
       border-color: #0D9BA8;
       box-shadow: 0 0 0 1px #0D9BA8; }
