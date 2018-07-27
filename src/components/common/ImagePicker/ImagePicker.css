@@ -1,0 +1,23 @@
+.image-picker {
+  width: 270px;
+  height: 270px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .image-picker.gray {
+    background-color: #EEEEEE;
+    color: #A2A2A2; }
+  .image-picker.white {
+    background-color: #fff;
+    color: #EEEEEE; }
+  .image-picker .image-picker__img {
+    width: 100%;
+    height: 100%; }
+  .image-picker .image-picker__plus {
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold; }
+  .image-picker .iamge-picker__input {
+    display: none; }

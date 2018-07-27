@@ -15,6 +15,7 @@ import {
   CmsFileInput,
   CmsRow,
   CmsTextarea,
+  ImagePicker,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -242,6 +243,15 @@ class TestDocPage extends Component {
             <CmsTextInput
               wrapperStyle={{ border: '1px solid #BEBEBE', height: 49 }} />
           </CmsRow>
+        </article>
+
+        {/* ImagePicker */}
+        <article>
+          <h1>ImagePicker 컴퍼넌트</h1>
+          <pre className='desc'>
+            image를 선택할 수 있는 box형태의 컴퍼넌트 입니다.
+          </pre>
+          <ImagePicker theme='gray' onChange={(image) => console.log(image)}/>
         </article>
       </section>
     )

@@ -15,6 +15,7 @@ import TuiEditor from './common/TuiEditor';
 import CategoryListGroup from './common/CategoryListGroup';
 import CmsPager from './common/CmsPager';
 import CmsRow from './common/CmsRow';
+import ImagePicker from './common/ImagePicker';
 
 import LoginForm from './Login/LoginForm';
 
@@ -36,6 +37,7 @@ export {
   CategoryListGroup,
   CmsPager,
   CmsRow,
+  ImagePicker,
 
   //Login
   LoginForm,
