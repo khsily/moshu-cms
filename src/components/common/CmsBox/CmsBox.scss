@@ -4,5 +4,8 @@
   padding: 25px;
   box-sizing: border-box;
 
-  &.content { padding: 30px; }
+  &.content { 
+    padding: 30px;
+    &.right-pad { padding-right: 130px; }
+   }
 }
