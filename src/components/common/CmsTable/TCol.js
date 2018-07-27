@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TCol = ({ head, children, className = '', center, size, style, color = '', ...rest }) => {
+const TCol = ({ head, children, className = '', center, size, style, color = '', bold, ...rest }) => {
   const props = {
-    className: `tcol ${center ? 'center' : ''} ${color} ${className}`,
+    className: `tcol ${center ? 'center' : ''} ${color} ${bold ? 'bold' : ''} ${className}`,
     style: Object.assign({}, size ? { width: `${size}%` } : {}, style),
     children,
     ...rest,
