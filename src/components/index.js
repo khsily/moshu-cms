@@ -13,6 +13,7 @@ import CmsSelect from './common/CmsSelect';
 import TuiEditor from './common/TuiEditor';
 import CategoryListGroup from './common/CategoryListGroup';
 import CmsPager from './common/CmsPager';
+import CmsRow from './common/CmsRow';
 
 import LoginForm from './Login/LoginForm';
 
@@ -32,6 +33,7 @@ export {
   TuiEditor,
   CategoryListGroup,
   CmsPager,
+  CmsRow,
 
   //Login
   LoginForm,

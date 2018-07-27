@@ -1,0 +1,16 @@
+.cms-row {
+  display: flex;
+
+  .cms-row__title {
+    margin: 0;
+    line-height: 49px;
+    width: 153px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .cms-row__content {
+    flex: 1;
+  }
+}

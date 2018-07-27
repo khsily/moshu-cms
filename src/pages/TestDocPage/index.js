@@ -13,6 +13,7 @@ import {
   CategoryListGroup,
   CmsPager,
   CmsFileInput,
+  CmsRow,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -139,7 +140,7 @@ class TestDocPage extends Component {
           <pre className='desc'>
             input type='file' 와 CmsBtm을 하나로 합쳐놓은 컴퍼넌트입니다.
           </pre>
-          <CmsFileInput 
+          <CmsFileInput
             wrapperStyle={{ border: '1px solid #BEBEBE', width: 500, marginBottom: 10 }} />
         </article>
 
@@ -218,6 +219,18 @@ class TestDocPage extends Component {
             pagePerBlock={4}
             center
             onChange={(page) => console.warn(page)} />
+        </article>
+
+        {/* CmsRow */}
+        <article>
+          <h1>CmsRow 컴퍼넌트</h1>
+          <pre className='desc'>
+            "제목: 내용" 식의 컴퍼넌트로 주로 CmsTextInput과 함꼐 사용됨
+          </pre>
+          <CmsRow title='제목'>
+            <CmsTextInput
+              wrapperStyle={{ border: '1px solid #BEBEBE', height: 49 }} />
+          </CmsRow>
         </article>
       </section>
     )
