@@ -11,6 +11,7 @@ import RadioGroup from './common/RadioGroup';
 import CmsSelect from './common/CmsSelect';
 import TuiEditor from './common/TuiEditor';
 import CategoryListGroup from './common/CategoryListGroup';
+import CmsPager from './common/CmsPager';
 
 import LoginForm from './Login/LoginForm';
 
@@ -28,6 +29,7 @@ export {
   CmsSelect,
   TuiEditor,
   CategoryListGroup,
+  CmsPager,
 
   //Login
   LoginForm,

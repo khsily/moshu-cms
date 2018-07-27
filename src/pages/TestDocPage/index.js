@@ -11,6 +11,7 @@ import {
   CmsSelect,
   TuiEditor,
   CategoryListGroup,
+  CmsPager,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -190,7 +191,7 @@ class TestDocPage extends Component {
         <article>
           <h1>CategoryListGroup 컴퍼넌트</h1>
           <pre className='desc'>
-
+            카테고리 리스트 컴퍼넌트
           </pre>
           <div style={{ width: 200 }}>
             <CategoryListGroup
@@ -199,6 +200,19 @@ class TestDocPage extends Component {
               activeValue={this.state.category}
               onChange={({ text }) => this.setState({ category: text })} />
           </div>
+        </article>
+
+        {/* CmsPager */}
+        <article>
+          <h1>CmsPager 컴퍼넌트</h1>
+          <pre className='desc'>
+            pager 컴퍼넌트
+          </pre>
+          <CmsPager
+            maxPage={10}
+            pagePerBlock={4}
+            center
+            onChange={(page) => console.warn(page)} />
         </article>
       </section>
     )

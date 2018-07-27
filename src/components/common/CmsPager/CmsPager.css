@@ -1,0 +1,22 @@
+.cms-pager button {
+  border: none;
+  background-color: transparent;
+  color: #909090;
+  transition: color 0.2s;
+  outline: none;
+  cursor: pointer;
+  margin: 0 7px;
+  font-weight: 15px; }
+  .cms-pager button:hover {
+    color: #6f6f6f; }
+
+.cms-pager .cms-pager__page.active {
+  color: #0D9BA8;
+  transition: color 0.2s;
+  font-weight: bold; }
+  .cms-pager .cms-pager__page.active:hover {
+    color: #08626a; }
+
+.cms-pager.center {
+  width: 100%;
+  text-align: center; }
