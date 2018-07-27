@@ -3,9 +3,9 @@ import { CmsBox } from '../..';
 
 import './CategoryListGroup.css';
 
-const CategoryListGroup = ({ title, list = [], activeValue, renderList, onChange, hideHeader }) => {
+const CategoryListGroup = ({ title, list = [], activeValue, renderList, onChange, hideHeader, className = '' }) => {
   return (
-    <ul className='category-list-group'>
+    <ul className={`category-list-group ${className}`}>
       {!hideHeader &&
         <li className='category-list-header'>
           <CmsBox className='category-list-group__title'>{title}</CmsBox>
