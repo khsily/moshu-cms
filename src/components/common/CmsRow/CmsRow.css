@@ -1,5 +1,6 @@
 .cms-row {
-  display: flex; }
+  display: flex;
+  margin-bottom: 25px; }
   .cms-row .cms-row__title {
     margin: 0;
     line-height: 49px;
