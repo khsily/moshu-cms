@@ -12,6 +12,8 @@ html, body, #root, #app {
 }
 
 .container {
+  padding-bottom: 50px;
+
   &.center {
     width: 100%;
     height: 100%;
@@ -19,6 +21,7 @@ html, body, #root, #app {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
   }
 }
 
