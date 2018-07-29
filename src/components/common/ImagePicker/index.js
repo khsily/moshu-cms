@@ -3,6 +3,14 @@ import React, { Component } from 'react';
 import './ImagePicker.css';
 
 class ImagePicker extends Component {
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const { image } = nextProps;
+    const { url } = prevState;
+
+    if (image && !url) return { url: image };
+    return null;
+  }
+  
   constructor(props) {
     super(props);
 
