@@ -17,7 +17,11 @@ import CmsPager from './common/CmsPager';
 import CmsRow from './common/CmsRow';
 import ImagePicker from './common/ImagePicker';
 
+//Login
 import LoginForm from './Login/LoginForm';
+
+//Home
+import UserStatistics from './Home/UserStatistics';
 
 export {
   Header,
@@ -41,4 +45,7 @@ export {
 
   //Login
   LoginForm,
+
+  //Home
+  UserStatistics,
 }

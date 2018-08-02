@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
-import { SectionNav } from '../../components';
+import { SectionNav, UserStatistics } from '../../components';
 
 class HomePage extends Component {
   render() {
     return (
       <section id='home-page' className='container'>
         <SectionNav left='회원관리' />
-        <div style={{ width: '100%', height: 350, border: '1px solid #ccc', marginBottom: 20 }} />
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <UserStatistics />
+          <div style={{ width: 420, height: 300, background: '#EFEFEF' }} />
+          <div style={{ width: 420, height: 300, background: '#EFEFEF' }} />
+        </div>
       </section>
     );
   }
