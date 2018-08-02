@@ -10,7 +10,8 @@
   .cms-table tbody tr td {
     padding: 25px 21px;
     font-size: 15px;
-    color: #707070; }
+    color: #707070;
+    vertical-align: top; }
   .cms-table th.center, .cms-table td.center {
     text-align: center; }
   .cms-table th.black, .cms-table td.black {
