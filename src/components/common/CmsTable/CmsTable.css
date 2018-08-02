@@ -1,5 +1,6 @@
 .cms-table {
-  width: 100%; }
+  width: 100%;
+  table-layout: fixed; }
   .cms-table thead tr th {
     text-align: left;
     font-size: 15px;
@@ -12,6 +13,10 @@
     font-size: 15px;
     color: #707070;
     vertical-align: top; }
+    .cms-table tbody tr td:not(.multiline) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .cms-table th.center, .cms-table td.center {
     text-align: center; }
   .cms-table th.black, .cms-table td.black {
