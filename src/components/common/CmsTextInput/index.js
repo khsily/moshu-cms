@@ -22,7 +22,6 @@ class CmsTextInput extends Component {
       focusControl,
       btnType,
       withBtn,
-      onChange,
       onBtnClick,
       ...rest,
     } = this.props;
