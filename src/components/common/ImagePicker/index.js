@@ -45,7 +45,7 @@ class ImagePicker extends Component {
 
     this.readURL(image, (url) => {
       this.setState({ image, url });
-      if (onChange) onChange(image);
+      if (onChange) onChange(image, url);
     });
   }
 
