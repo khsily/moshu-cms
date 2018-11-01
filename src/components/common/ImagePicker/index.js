@@ -7,7 +7,7 @@ class ImagePicker extends Component {
     const { image } = nextProps;
     const { url } = prevState;
 
-    if (image && (url != image)) return { url: image };
+    if (image && (url !== image)) return { url: image };
     return null;
   }
 
