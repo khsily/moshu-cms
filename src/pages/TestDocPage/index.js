@@ -16,6 +16,7 @@ import {
   CmsRow,
   CmsTextarea,
   ImagePicker,
+  CmsDropdown,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -251,7 +252,24 @@ class TestDocPage extends Component {
           <pre className='desc'>
             image를 선택할 수 있는 box형태의 컴퍼넌트 입니다.
           </pre>
-          <ImagePicker theme='gray' onChange={(image) => console.log(image)}/>
+          <ImagePicker theme='gray' onChange={(image) => console.log(image)} />
+        </article>
+
+        {/* CmsDropdown */}
+        <article>
+          <h1>CmsDropdown 컴퍼넌트</h1>
+          <pre className='desc'>
+            클릭시 하단에 드롭다운 메뉴를 띄워주는 컴퍼넌트 입니다.
+          </pre>
+          <CmsDropdown
+            menus={["test1", "test2", "test3"]}
+            onMenuClick={(v) => console.warn(v)}>클릭해주세요!</CmsDropdown>
+          <CmsDropdown
+            menus={["test1", "test2", "test3"]}
+            onMenuClick={(v) => console.warn(v)}>클릭해주세요!</CmsDropdown>
+          <CmsDropdown
+            menus={["test1", "test2", "test3"]}
+            onMenuClick={(v) => console.warn(v)}>클릭해주세요!</CmsDropdown>
         </article>
       </section>
     )

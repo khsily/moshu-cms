@@ -16,6 +16,7 @@ import CategoryListGroup from './common/CategoryListGroup';
 import CmsPager from './common/CmsPager';
 import CmsRow from './common/CmsRow';
 import ImagePicker from './common/ImagePicker';
+import CmsDropdown from './common/CmsDropdown';
 
 //Login
 import LoginForm from './Login/LoginForm';
@@ -42,6 +43,7 @@ export {
   CmsPager,
   CmsRow,
   ImagePicker,
+  CmsDropdown,
 
   //Login
   LoginForm,

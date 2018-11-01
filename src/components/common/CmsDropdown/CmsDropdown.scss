@@ -1,0 +1,33 @@
+.cms-dropdown {
+  position: relative;
+
+  .cms-dropdown__trigger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .cms-dropdown__menu-wrapper {
+    position: absolute;
+    top: 22px;
+    list-style: none;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    padding: 0;
+    margin: 0;
+    margin: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    z-index: 1;
+
+    .cms-dropdown__menu {
+      padding: 5px;
+      cursor: pointer;
+      min-width: 100px;
+
+      &:hover {
+        transition: background-color 0.2s;
+        background-color: #eee;
+      }
+    }
+  }
+}
