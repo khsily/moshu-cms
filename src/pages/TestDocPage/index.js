@@ -28,6 +28,7 @@ class TestDocPage extends Component {
     this.state = {
       activeRadio: '외부 사이트',
       category: '컨텐츠',
+      page: 1,
     }
   }
 
@@ -231,7 +232,8 @@ class TestDocPage extends Component {
             maxPage={10}
             pagePerBlock={4}
             center
-            onChange={(page) => console.warn(page)} />
+            page={this.state.page}
+            onChange={(page) => this.setState({ page })} />
         </article>
 
         {/* CmsRow */}
