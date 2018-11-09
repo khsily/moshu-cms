@@ -17,6 +17,7 @@ import {
   CmsTextarea,
   ImagePicker,
   CmsDropdown,
+  CmsPopup,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -29,6 +30,7 @@ class TestDocPage extends Component {
       activeRadio: '외부 사이트',
       category: '컨텐츠',
       page: 1,
+      popupVisible: false,
     }
   }
 
@@ -272,6 +274,21 @@ class TestDocPage extends Component {
           <CmsDropdown
             menus={["test1", "test2", "test3"]}
             onMenuClick={(v) => console.warn(v)}>클릭해주세요!</CmsDropdown>
+        </article>
+
+        {/* CmsPopup */}
+        <article>
+          <h1>CmsPopup 컴퍼넌트</h1>
+          <pre className='desc'>
+            moshu-cms 사용하는 팝업입니다.
+          </pre>
+          <button onClick={() => this.setState({ popupVisible: true })}>팝업 열기</button>
+          <CmsPopup
+            title='팝업 타이틀' 
+            open={this.state.popupVisible}
+            onClose={() => this.setState({ popupVisible: false })}>
+            팝업 컨텐츠
+          </CmsPopup>
         </article>
       </section>
     )

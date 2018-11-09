@@ -1,0 +1,86 @@
+@import '../../../styles/mixin.scss';
+@import '../../../styles/color.scss';
+
+.cms-popup {
+  display: none;
+
+  &.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &.open {
+    display: block;
+  }
+
+  .cms-popup__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 500px;
+    min-height: 300px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+
+    .cms-popup__close {
+      position: absolute;
+      top: -13px;
+      right: -13px;
+      border: 2px solid #ccc;
+      width: 34px;
+      height: 34px;
+      border-radius: 100%;
+      padding: 0;
+      outline: none;
+      cursor: pointer;
+      @include hoverColor($color-primary-dark, 'background');
+
+      span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -1px;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        background-color: #eee;
+        width: 50%;
+        height: 3px;
+
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .cms-popup__header {
+      background-color: $color-primary;
+      padding: 15px;
+      border-radius: 8px 8px 0 0;
+      border-bottom: 2px solid #ccc;
+
+      .cms-popup__title {
+        margin: 0;
+        font-weight: normal;
+        color: #fff;
+        font-size: 26px;
+      }
+    }
+
+    .cms-popup__content {
+      padding: 15px;
+    }
+  }
+}
