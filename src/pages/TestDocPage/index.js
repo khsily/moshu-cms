@@ -18,6 +18,7 @@ import {
   ImagePicker,
   CmsDropdown,
   CmsPopup,
+  QuillEditor,
 } from '../../components';
 
 import './TestDocPage.css';
@@ -32,6 +33,8 @@ class TestDocPage extends Component {
       page: 1,
       popupVisible: false,
     }
+
+    this.quill = React.createRef();
   }
 
   render() {
@@ -284,11 +287,30 @@ class TestDocPage extends Component {
           </pre>
           <button onClick={() => this.setState({ popupVisible: true })}>팝업 열기</button>
           <CmsPopup
-            title='팝업 타이틀' 
+            title='팝업 타이틀'
             open={this.state.popupVisible}
             onClose={() => this.setState({ popupVisible: false })}>
             팝업 컨텐츠
           </CmsPopup>
+        </article>
+
+        {/* QuillEditor */}
+        <article>
+          <h1>QuillEditor 컴퍼넌트</h1>
+          <pre className='desc'>
+            tuieditor 대신 사용가능한 에디터 컴퍼넌트로 tui에디터는 마크다운 에디터인 반면
+            quill에디터는 html 기반 에디터입니다.
+          </pre>
+          <QuillEditor
+            ref={this.quill}
+            placeholder="test"
+            onAddImage={(file, callback) => {
+              console.warn(file);
+              callback('https://homepages.cae.wisc.edu/~ece533/images/airplane.png');
+            }} />
+            <button onClick={() => {
+              console.warn(this.quill.current.getHtml())
+            }}>컨텐츠 보기 (console)</button>
         </article>
       </section>
     )

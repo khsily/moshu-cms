@@ -18,6 +18,7 @@ import CmsRow from './common/CmsRow';
 import ImagePicker from './common/ImagePicker';
 import CmsDropdown from './common/CmsDropdown';
 import CmsPopup from './common/CmsPopup';
+import QuillEditor from './common/QuillEditor';
 
 //Login
 import LoginForm from './Login/LoginForm';
@@ -46,6 +47,7 @@ export {
   ImagePicker,
   CmsDropdown,
   CmsPopup,
+  QuillEditor,
 
   //Login
   LoginForm,
