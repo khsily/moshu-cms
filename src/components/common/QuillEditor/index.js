@@ -5,10 +5,10 @@
  * NOTE: 이 컴퍼넌트는 quill, quill-delta-to-html npm 패키지를 필요로합니다.
  */
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Quill from 'quill';
 import 'quill/dist/quill.snow.css';
-import { QuillDeltaToHtmlConverter } from 'quill-delta-to-html'; 
+import { QuillDeltaToHtmlConverter } from 'quill-delta-to-html';
 
 const toolbarOptions = [
   ['bold', 'italic', 'underline', 'strike'],
@@ -25,7 +25,7 @@ const toolbarOptions = [
   ['clean']                                         // remove formatting button
 ];
 
-class QuillEditor extends Component {
+class QuillEditor extends PureComponent {
   componentDidMount() {
     this.editor = new Quill('#ql-editor', {
       modules: {
@@ -41,7 +41,11 @@ class QuillEditor extends Component {
   }
 
   render() {
-    return <div id="ql-editor"></div>;
+    return (
+      <div id="ql-editor"
+        dangerouslySetInnerHTML={{ __html: this.props.initialHtml }}>
+      </div>
+    );
   }
 
   _selectLocalImage() {

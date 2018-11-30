@@ -304,6 +304,7 @@ class TestDocPage extends Component {
           <QuillEditor
             ref={this.quill}
             placeholder="test"
+            initialHtml={"<b>Hello!!!!</b>"}
             onAddImage={(file, callback) => {
               console.warn(file);
               callback('https://homepages.cae.wisc.edu/~ece533/images/airplane.png');
