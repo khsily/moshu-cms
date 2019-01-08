@@ -40,6 +40,11 @@ class QuillEditor extends PureComponent {
     });
   }
 
+  componentWillUnmount() {
+    const toolbar = document.querySelector('.ql-toolbar.ql-snow');
+    toolbar.remove();
+  }
+
   render() {
     return (
       <div id="ql-editor"
